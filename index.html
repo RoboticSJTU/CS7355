@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
     <style>
         body {
             margin: 10pt;
@@ -15,6 +14,7 @@
 
         #pagecontainer {
             width: 700px;
+            margin: 0 auto;
         }
 
         a:link {
@@ -30,28 +30,27 @@
             color: #603;
         }
 
+        h1, h2, h3 {
+            margin: 0;
+            font-weight: bold;
+        }
+
         h1 {
             font-size: 14pt;
             color: #903;
-            margin: 0;
             padding-top: .5em;
-            font-weight: bold;
         }
 
         h2 {
             font-size: 12pt;
             color: #903;
-            margin: 0;
             padding-top: .8em;
-            font-weight: bold;
         }
 
         h3 {
             font-size: 10pt;
             color: #000;
-            margin: 0;
             padding-top: .8em;
-            font-weight: bold;
         }
 
         ul {
@@ -76,8 +75,7 @@
             width: 100%;
         }
 
-        th,
-        td {
+        th, td {
             text-align: left;
             padding: 2px;
         }
@@ -86,7 +84,7 @@
             background-color: #f2f2f2;
         }
     </style>
-    <title>CS3317: Artificial Intelligence</title>
+    <title>CS7355: Frontier of Autonomous Driving Technology</title>
     <style type="text/css" abt="234"></style>
 </head>
     
@@ -94,14 +92,19 @@
     <div id="pagecontainer">
         <div id="heading">
             <h1>CS7355: Frontier of Autonomous Driving Technology</h1>
-            Shanghai Jiao Tong University, Spring 2024
+            <p>Shanghai Jiao Tong University, Spring 2024</p>
+        </div>
+
+        <div id="introduction">
+            <h2>Introduction</h2>
+            <p>Autonomous driving is a frontier field where artificial intelligence and robotics technologies are applied, which has gradually made breakthrough progress in recent years and is steadily advancing towards full commercialization. In the near future, autonomous driving technology will completely revolutionize human transportation systems. This course will provide graduate students at Shanghai Jiao Tong University with a deep analysis of the architecture and working principles of autonomous driving systems, understanding the basic principles of artificial intelligence, machine learning and robotics involved in autonomous driving, familiarizing with practical tools for building basic autonomous driving modules, and ultimately mastering the ability to implement their own autonomous driving systems in open-source simulators.</p>
+            <p>The teaching goals of this course are divided into three levels. First, students will learn and understand the basic components of an autonomous driving system, including system architecture, vehicle dynamics, visual and radar perception, map construction, state estimation, decision-making, motion planning, and optimal control. Second, students will learn how to apply these theoretical knowledge to practical problems and scenarios, such as implementing an autonomous driving system in a simulator environment, and understanding its applications and challenges in the real world. Finally, students will have the opportunity to explore the frontier research of autonomous driving, including the latest perception and decision-making algorithms, learning-based methods, and the current challenges and future research directions.</p>
+            <p>The main content of the course covers various key parts of the autonomous driving system. First, we will introduce the basic concepts and system architecture of autonomous driving, as well as the basic principles of vehicle dynamics. Next, we will delve into visual and radar perception technologies, which are the "eyes" of the autonomous driving system, enabling it to perceive the surrounding environment. Then, we will explore the methods of map construction and localization, which allow the vehicle to know its position in the environment. After that, we will study the methods of state estimation and decision-making, which enable the vehicle to make decisions based on the current environmental state. Finally, we will discuss motion planning and optimal control strategies, allowing the vehicle to perform efficient motion control based on the decision results. In addition, we will discuss prediction problems in autonomous driving, and how to solve these problems using learning-based methods. The course will conclude with a series of frontier lectures by senior experts from SenseTime and professors from Shanghai Jiao Tong University, showcasing the latest research progress and industrial applications of autonomous driving.</p>
+            <p>For prerequisite courses, we recommend students to have basic knowledge of linear algebra, probability theory and statistics, as well as programming knowledge, especially Python programming. Students who have some understanding of robotics, control theory, computer vision or machine learning will find it easier to understand the content of the course.</p>
         </div>
 
         <div id="staff">
-            <a name="staff">
-                <h2>Teaching Staff</h2>
-            </a> 
-
+            <h2>Teaching Staff</h2>
             <table>
                 <tbody>
                     <tr>
@@ -110,93 +113,70 @@
                         <th style="width:30%">email</th>
                         <th style="width:35%">office hour</th>
                     </tr>
-
                     <tr>
                         <td>Instructor</td>   
                         <td><a href="http://cindycia.github.io/" target="_blank">Panpan Cai</a></td>
                         <td>cai_panpan@sjtu.edu.cn</td>
                         <td>Fri 10-11 AM <br>Online</td>
                     </tr>
-
                     <tr>
                         <td>Instructor</td>   
-                        <td><a href="http://shuaili8.github.io/" target="_blank">Shuai Li</a></td>
+                        <td><a href="https://lihongyang.info/" target="_blank">Hongyang Li</a></td>
+                        <td>hongyangli@sjtu.edu.cn</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>TA</td>   
+                        <td>Xuanjin Jin</td>
                         <td></td>
                         <td></td>
                     </tr>
-
                     <tr>
                         <td>TA</td>   
                         <td>Hairuo Liu</td>
-                        <td></td>
+                        <td>751507969@qq.com</td>
                         <td></td>
                     </tr>
-
                     <tr>
-                        <td></td>   
-                        <td>Haoming Ye</td>
-                        <td>butterflyprimo@sjtu.edu.cn</td>
-                        <td>Tue 7-8 PM <br>Online</td>
+                        <td>TA</td>   
+                        <td>Chendong Zeng</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
         <div id="announcements">
-            <a name="announcements">
-                <h2>News</h2>
-            </a> 
+            <h2>News</h2>
             <ul>
-                <li><b>Slides</b> will be released along the way. Please stay tuned.</li>
-                <li><b>Topic 1 Intro to AI</b> material is out.</li>
-                <li><b>Topic 2 Uninformed Search</b> material is out.</li>
-                <li><b>HW 01 is out and is due on Sept 29</b> material is out.</li>
-                <li><b>Topic 3 Informed Search</b> material is out.</li>
-                <li><b>Course Arrangement</b> has been updated owing to National Day holidays</li>
-                <!-- <li><b>HW 5</b> is out and is due on Dec 15. <b>Solution 5</b> is out.</li>
-                <li><b>HW 4</b> is out and is due on Nov 30. <b>Solution 4</b> is out.</li>
-                <li><b>Project</b> is out and is due on Dec 28. </li>
-                <li><b>HW 2</b> is out and is due on Oct 28. <b>Solution 2</b> is out.</li>
-                <li><b>HW 1</b> is out and is due on Oct 12. <b>Solution 1</b> is out.</li> -->
-                <!--  </li>
-                <li><b>Tutorial 3</b> is about the Project 2 and multi-task learning. [<a href="Tutorial3.pdf"  target="_blank">pdf</a>]</li>
-                 -->
-                <!-- 
-                
-                <li><b>Tutorial 1</b> is about the Python basics, tensorflow and pytorch. [<a href="Tutorial1.pdf"  target="_blank">pdf</a>]</li> -->
-                <!-- current announcements -->
+                <!-- Add any announcements here -->
             </ul>
         </div>
 
         <div id="courseinfo">
             <h2>Course Information</h2>
-            <p></p>
-            <p><b>Lecture times</b></p>
-            <ul>
-                <li>Mon 8:00-9:40 at Dong Zhong Yuan 2-403 from Week 1 to Week 16</li>
-                <li>Wed 10:00-11:40 at Dong Zhong Yuan 2-403 from Week 9 to Week 16</li>
-            </ul>
-            <p></p>
-            <!-- <p><b>Recitation time</b> Mon 18:00-19:40 at F103 </p> -->
-            <p><b>Grading</b> Your grade will be determined by assignments (40%), a project (20%) with presentations (10%) and a final exam (30%).
-            </p>
+            <p><b>Lecture
 
+ times</b></p>
+            <ul>
+                <li</li>
+                <li></li>
+            </ul>
+            
+            <p><b>Grading</b> 
+                Your grade will be determined by assignments (20%), projects (30%) and a final exam (50%).</p>
 
             <p><b>References</b></p>
             <ul>
-                <li><a href="https://inst.eecs.berkeley.edu/~cs188/fa21/" target="_blank">CS 188 Introduction to Artificial Intelligence</a> by UC Berkeley</li> 
-                <li><a href="https://www.cs.cmu.edu/~15281-s20/" target="_blank">15-281 Artificial Intelligence: Representation and Problem Solving</a> by CMU</li>
-                <li><a href="https://stanford-cs221.github.io/spring2021/" target="_blank">CS221: Artificial Intelligence: Principles and Techniques</a> by Stanford</li>
-                <li>Artificial Intelligence: A Modern Approach, by Stuart Russell and Peter Norvig </li>
+                <li>Probabilistic Robotics by Sebastian Thrun, Wolfram Burgard, and Dieter Fox</li> 
+                <li>Planning Algorithm by Steven M. LaValle</li>
             </ul>
-            <p></p>
         </div>
 
         <div id="lectures">
-            <a name="lectures"></a>
             <h2>Schedule</h2>
-
-            <table id="schedule">
+            <table>
                 <tbody>
                     <tr>
                         <th style="width:7%">week</th>
@@ -204,6 +184,7 @@
                         <th style="width:45%">topic</th>
                         <th style="width:38%">materials</th>
                     </tr>
+                    <!-- Add lecture schedule here -->
                 </tbody>
             </table>
         </div>
