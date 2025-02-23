@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            margin: 10pt;
+            padding: 0;
+            font-size: 10pt;
+            font-family: verdana, arial, helvetica;
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+        #pagecontainer {
+            width: 700px;
+            margin: 0 auto;
+        }
+
+        a:link {
+            color: #903;
+        }
+
+        a:visited {
+            color: #603;
+        }
+
+        a:hover,
+        a:active {
+            color: #603;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 14pt;
+            color: #903;
+            padding-top: .5em;
+        }
+
+        h2 {
+            font-size: 12pt;
+            color: #903;
+            padding-top: .8em;
+        }
+
+        h3 {
+            font-size: 10pt;
+            color: #000;
+            padding-top: .8em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10pt;
+            margin-left: 0pt;
+        }
+
+        li {
+            margin-top: 5pt;
+        }
+
+        #description li {
+            list-style-type: disc;
+            margin-left: 15pt;
+        }
+
+        table {
+            font-size: 100%;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <title>CS7355: 自动驾驶技术前沿</title>
+    <style type="text/css" abt="234"></style>
+</head>
+
+<body>
+    <div id="pagecontainer">
+        <div id="heading">
+            <h1>CS7355: 自动驾驶技术前沿</h1>
+            <p>上海交通大学，2025年春季</p>
+        </div>
+
+        <div id="introduction">
+            <h2>介绍</h2>
+            <p>自动驾驶技术是人工智能与机器人学技术的前沿领域，近年来取得了突破性进展，正朝着全面商业化迈进。本课程旨在深入剖析自动驾驶系统的架构和原理，涵盖人工智能、机器学习与机器人学的基础知识，并通过实践掌握构建自动驾驶基础模块的工具，最终达到在开源仿真器中实现自动驾驶系统的能力。教学目标包括学习系统基本构成、理论应用于实际问题、探索前沿研究，涵盖系统架构、感知技术、地图构建、状态估计、决策制定、运动规划等关键部分。建议先修课程包括线性代数、概率论、统计学和Python编程，以及对机器人学、控制理论、计算机视觉或机器学习有一定了解。
+            </p>
+        </div>
+
+        <div id="staff">
+            <h2>教学人员（按照字母顺序）</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="width:15%"></th>
+                        <th style="width:20%">姓名</th>
+                        <th style="width:30%">邮箱</th>
+                        <th style="width:35%">办公时间</th>
+                    </tr>
+                    <tr>
+                        <td>教师</td>
+                        <td><a href="http://cindycia.github.io/" target="_blank">蔡盼盼</a></td>
+                        <td>cai_panpan@sjtu.edu.cn</td>
+                        <td>周三下午1.-2. 线上</td>
+                    </tr>
+                    <tr>
+                        <td>教师</td>
+                        <td><a href="https://lihongyang.info/" target="_blank">李弘扬</a></td>
+                        <td>hongyangli@sjtu.edu.cn</td>
+                        <td>周三下午1.-2. 线上</td>
+                    </tr>
+                    <tr>
+                        <td>助教</td>
+                        <td>金渲晋</td>
+                        <td>xuanjin.jin@sjtu.edu.cn</td>
+                        <td>周四下午1.-2. 线上</td>
+                    </tr>
+                    <tr>
+                        <td>助教</td>
+                        <td>汤雯静</td>
+                        <td>applesoup@sjtu.edu.cn</td>
+                        <td>周四下午1.-2. 线上</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="announcements">
+            <h2>新闻</h2>
+            <ul>
+                <p><b>2025.02.19</b> 2025年春季学期课程开始。</p>
+            </ul>
+        </div>
+
+        <div id="courseinfo">
+            <h2>课程信息</h2>
+            <p><b>上课地点/时间</b></p>
+            <ul>
+                <li>东上院211 / 1-16周周三3-5节 10:00-12:45</li>
+            </ul>
+
+            <p><b>评分</b></p>
+            <p>您的成绩（满分100分）将由平时作业（4次，每次15分）、书面报告（10分）、论文报告（30分）构成</p>
+
+            <p><b>参考资料</b></p>
+            <ul>
+                <li><a href="https://roboticsjtu.github.io/CS7355/Probabilistic-Robotics-en.pdf">《Probabilistic
+                        Robotics》</a>by
+                    Sebastian Thrun, Wolfram Burgard, and Dieter Fox</li>
+                <li><a href="https://roboticsjtu.github.io/CS7355/bookbig.pdf">《Planning Algorithms》</a>by Steven M.
+                    LaValle</li>
+                <li><a href="https://roboticsjtu.github.io/CS7355/Carla环境配置.pdf">《Carla环境配置》</a>by 助教团队</li>
+            </ul>
+        </div>
+
+        <div id="lectures">
+            <h2>课程安排</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <th style="width:7%">周数</th>
+                        <th style="width:10%">日期</th>
+                        <th style="width:45%">主题</th>
+                        <th style="width:38%">材料</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2.19</td>
+                        <td>自动驾驶车辆简介</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第一节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>2.28</td>
+                        <td>自动驾驶车辆的系统架构</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第二节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3.6</td>
+                        <td>自动驾驶算法体系</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第三节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>3.13</td>
+                        <td>自动驾驶中的数据及视觉感知 I</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第四节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>3.20</td>
+                        <td>视觉感知 II</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第五节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>3.27</td>
+                        <td>激光雷达与多传感器融合感知</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第六节1.pdf">课件1</a> <a href="https://roboticsjtu.github.io/CS7355/第六节2.pdf">课件2</a></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>4.3</td>
+                        <td>车辆动力学和控制</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第七节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>4.10</td>
+                        <td>运动规划 I</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第八节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>4.17</td>
+                        <td>运动规划 II</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第九节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>4.24</td>
+                        <td>决策制定 I</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第十节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>5.1</td>
+                        <td>地图、定位、状态估计（劳动节假期）</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>5.8</td>
+                        <td>决策制定 II</td>
+                        <td><a href="https://roboticsjtu.github.io/CS7355/第十一节.pdf">课件</a></td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>5.15</td>
+                        <td>自动驾驶工业前沿</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>5.22</td>
+                        <td>自动驾驶研究前沿</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>5.29</td>
+                        <td>学生论文报告</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>6.5</td>
+                        <td>学生论文报告</td>
+                        <td></td>
+                    </tr>
+                    <!-- 在此处添加课程安排 -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>
